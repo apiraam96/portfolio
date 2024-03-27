@@ -7,9 +7,9 @@
   justify-content: space-between;
 }
 
-/* .navbar-links > * {
+.navbar-links > * {
   padding-right: 3em;
-} */
+}
 
 * {
   box-sizing: border-box;
