@@ -11,7 +11,7 @@ import { useEffect, useRef } from "react";
 gsap.registerPlugin(TextPlugin);
 
 export default function Home() {
-  const words = [" Apiraam.", " a Scientist.", " a Developer."];
+  const words = [" Frontend Engineer.", " Backend Engineer.", " Full Stack Engineer."];
   const text = useRef<HTMLInputElement>(null);
 
   useGSAP(() => {
@@ -26,11 +26,11 @@ export default function Home() {
     boxTimeline
       .to(".box", {
         duration: 1,
-        width: "13.5vw",
+        width: "20vw",
         delay: 0.5,
         ease: "power4.inOut",
       })
-      .from(".hi", { duration: 1, y: "7vw", ease: "power3.out", onComplete: () => masterTimeline.play() })
+      .from(".hi", { duration: 1, y: "-7vw", ease: "power3.out", onComplete: () => masterTimeline.play() })
       .to(".box", { duration: 1, height: "7vw", ease: "elastic.out" });
 
     let masterTimeline = gsap.timeline({ repeat: -1, delay: 1 }).pause();
@@ -46,8 +46,10 @@ export default function Home() {
       <Navbar />
       <div>
         <h1>
+          <span>Hi, Im </span>
           <span className="box"></span>
-          <span className="hi">Hi, Im </span>
+          <span className="hi"> Apiraam </span>
+          <span> and Im a</span>
           <span className="text"></span>
           <span className="cursor">_</span>
         </h1>

@@ -30,9 +30,9 @@ h1 {
   overflow: hidden
 }
 
-h1 .box {
+.box {
   position: absolute;
-  bottom: 0;
+  bottom: 1;
   display: inline-block;
   background: red;
   height: 1vw;
