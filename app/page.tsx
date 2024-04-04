@@ -11,7 +11,11 @@ import { useEffect, useRef } from "react";
 gsap.registerPlugin(TextPlugin);
 
 export default function Home() {
-  const words = [" Frontend Engineer.", " Backend Engineer.", " Full Stack Engineer."];
+  const words = [
+    " Frontend Engineer.",
+    " Backend Engineer.",
+    " Full Stack Engineer.",
+  ];
   const text = useRef<HTMLInputElement>(null);
 
   useGSAP(() => {
@@ -20,6 +24,11 @@ export default function Home() {
       ease: "power2.inOut",
       repeat: -1,
     });
+
+    let andTimeline = gsap.timeline().pause();
+    andTimeline.add(
+      gsap.to(".and", { text: " and Im a ", duration: 1 })
+    );
 
     let boxTimeline = gsap.timeline();
 
@@ -30,7 +39,15 @@ export default function Home() {
         delay: 0.5,
         ease: "power4.inOut",
       })
-      .from(".hi", { duration: 1, y: "-7vw", ease: "power3.out", onComplete: () => masterTimeline.play() })
+      .from(".hi", {
+        duration: 1,
+        y: "-7vw",
+        ease: "power3.out",
+        onComplete: () => {
+          andTimeline.play();
+          masterTimeline.play();
+        },
+      })
       .to(".box", { duration: 1, height: "7vw", ease: "elastic.out" });
 
     let masterTimeline = gsap.timeline({ repeat: -1, delay: 1 }).pause();
@@ -49,7 +66,7 @@ export default function Home() {
           <span>Hi, Im </span>
           <span className="box"></span>
           <span className="hi"> Apiraam </span>
-          <span> and Im a</span>
+          <span className="and"></span>
           <span className="text"></span>
           <span className="cursor">_</span>
         </h1>
