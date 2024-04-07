@@ -5,10 +5,11 @@ import { Canvas } from "@react-three/fiber";
 import { ContactShadows, Float, Environment } from "@react-three/drei";
 import { Suspense, useState, useRef } from "react";
 import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 
 export default function Shapes() {
   return (
-    <div className="row-span-1 row-start-1 -mt-9 aspect-square md:col-span-1 md:col-start-2 md:mt-0">
+    <div className="row-span-1 row-start-1 -mt-40 aspect-square md:col-span-1 md:col-start-2 md:mt-0">
       <Canvas
         className="z-0"
         shadows
@@ -17,9 +18,9 @@ export default function Shapes() {
         camera={{ position: [0, 0, 25], fov: 30, near: 1, far: 40 }}
       >
         <Suspense fallback={null}>
-            <Geometries />
+          <Geometries />
           <ContactShadows
-            position={[0, -3.5, 0]}
+            position={[0, -5.5, 0]}
             opacity={0.65}
             scale={40}
             blur={1}
@@ -37,11 +38,14 @@ function Geometries() {
     {
       position: [0, 0, 0],
       r: 0.3,
-      geometry: new THREE.IcosahedronGeometry(3), //Looks like a gem
+      geometry: new THREE.OctahedronGeometry(5), //Looks like a gem
     },
   ];
 
-  const materials = [new THREE.MeshNormalMaterial()];
+  const materials = [
+    new THREE.MeshNormalMaterial(), 
+    // new THREE.MeshStandardMaterial({ color: 0x1abc9c})
+  ];
 
   return geometries.map(({ position, r, geometry }) => (
     <Geometry
@@ -55,7 +59,7 @@ function Geometries() {
 }
 
 function Geometry({ r, position, geometry, materials }) {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const meshRef = useRef();
   const startingMaterial = getRandomMaterial();
 
@@ -84,6 +88,19 @@ function Geometry({ r, position, geometry, materials }) {
   const handlePointerOut = () => {
     document.body.style.cursor = "default";
   };
+
+  useGSAP(() => {
+    setVisible(true)
+    gsap.from(meshRef.current.scale, {
+        y: 0,
+        x: 0, 
+        z: 0,
+        delay: 3,
+        duration: 2, 
+        ease: "bounce.out",
+        delay: 3
+      })
+  })
 
   return (
     <group position={position} ref={meshRef}>

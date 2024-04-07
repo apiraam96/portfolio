@@ -92,6 +92,17 @@ export default function Introduction() {
     );
   });
 
+    // tl.to(".shapes", {
+    //   y: 100, 
+    //   opacity: 0
+    // }, 
+    // {
+    //   opacity: 1, 
+    //   y: 0, 
+    //   duration: 1.5, 
+    //   ease: "elastic.out(1, 0.4"
+    // })
+
   const renderLetters = (name: string, key: string) => {
     return name.split("").map((letter, index) => (
       <span
@@ -133,7 +144,9 @@ export default function Introduction() {
               </span>
             </h1>
           </div>
+          <div className='shapes'>
           <Shapes />
+          </div>
         </div>
       </div>
     </section>
