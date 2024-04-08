@@ -128,11 +128,10 @@ export default function Introduction() {
     <section className="px-4 py-10 md:px-6 md:py-14 lg:py-16">
       <div className="mx-auto w-full max-w-7xl">
         <div
-          className="flex flex-wrap min-h-[70vh] items-center "
+          className="grid min-h-[70vh] items-center justify-center lg:grid-cols-3"
           aria-label="Apiraam Selvabaskaran"
         >
-          <div className="flex">
-            <h1 className="mb-8 font-extrabold tracking-tighter text-4xl md:text-8xl">
+            <h1 className="mb-9 font-extrabold tracking-tighter text-5xl flex-col md:text-8xl lg:col-start-1 lg:col-span-2">
               <span className="block text-red-500">
                 {renderLetters("Apiraam", "first")}
               </span>
@@ -143,7 +142,6 @@ export default function Introduction() {
                 Software Engineer
               </span>
             </h1>
-          </div>
           <div className='shapes'>
           <Shapes />
           </div>
