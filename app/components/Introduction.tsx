@@ -131,7 +131,7 @@ export default function Introduction() {
           className="grid min-h-[70vh] items-center justify-center lg:grid-cols-3"
           aria-label="Apiraam Selvabaskaran"
         >
-            <h1 className="mb-9 font-extrabold tracking-tighter text-5xl flex-col md:text-8xl lg:col-start-1 lg:col-span-2">
+            <h1 className="mb-9 font-extrabold tracking-tighter text-5xl flex-col md:text-8xl lg:col-start-1 lg:col-span-2 lg:text-[7rem]">
               <span className="block text-red-500">
                 {renderLetters("Apiraam", "first")}
               </span>

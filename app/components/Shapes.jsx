@@ -9,7 +9,7 @@ import { useGSAP } from "@gsap/react";
 
 export default function Shapes() {
   return (
-    <div className="row-span-1 row-start-1 -mt-60 aspect-square md:col-span-1 md:col-start-2 md:mt-0">
+    <div className="p-0 row-span-1 row-start-1 -mt-60 aspect-square md:col-span-1 md:col-start-2 md:mt-0">
       <Canvas
         className="z-0"
         shadows
@@ -40,6 +40,27 @@ function Geometries() {
       r: 0.3,
       geometry: new THREE.OctahedronGeometry(4), //Looks like a gem
     },
+    {
+      position: [1, -0.75, 4],
+      r: 0.5,
+      geometry: new THREE.CapsuleGeometry(0.5, 1.6, 2, 16), //Looks like a gem
+    },
+    {
+      position: [-1.4, 2, -4],
+      r: 0.6,
+      geometry: new THREE.TorusGeometry(1.5, 0.8, 16, 32), //Looks like a gem
+    },
+    {
+      position: [1.6, 1.6, -4],
+      r: 0.5,
+      geometry: new THREE.TetrahedronGeometry(2), //Looks like a gem
+    },
+    {
+      position: [-0.8, -0.75, 5],
+      r: 0.5,
+      geometry: new THREE.DodecahedronGeometry(1), //Looks like a gem
+    },
+
   ];
 
   const materials = [
