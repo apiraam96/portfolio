@@ -8,6 +8,24 @@
   font-family: "Poppins";
   src: url('../public/Poppins/Poppins-ExtraLight.ttf');
 }
+ html {
+  background: linear-gradient(-45deg, #23a6d5, #1784ab, #0b5975, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 .navbar-links {
   display: flex;

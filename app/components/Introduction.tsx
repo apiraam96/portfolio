@@ -125,7 +125,7 @@ export default function Introduction() {
     //     <span className="cursor">_</span>
     //   </h2>
     // </div>
-    <section className="px-4 py-10 md:px-6 md:py-14 lg:py-16">
+    <section className="h-screen px-4 py-10 md:px-6 md:py-14 lg:py-16">
       <div className="mx-auto w-full max-w-7xl">
         <div
           className="grid min-h-[70vh] items-center justify-center lg:grid-cols-3"
