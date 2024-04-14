@@ -34,7 +34,7 @@ export default function Navbar() {
             <ul className="flex flex-col gap-10 md:flex-row">
               <li><a className="hover:text-gray-500" href="#">About</a></li>
               <li><a className="hover:text-gray-500" href="#">Projects</a></li>
-              <li><a className="hover:text-gray-500" href="#">Contact</a></li>
+              <li><a className="hover:text-gray-500" href="/contact">Contact</a></li>
             </ul>
           </div>
           {isMenuOpen && (
@@ -42,7 +42,7 @@ export default function Navbar() {
             <ul className="flex flex-col gap-10 md:flex-row">
               <li><a className="hover:text-gray-500" href="#">About</a></li>
               <li><a className="hover:text-gray-500" href="#">Projects</a></li>
-              <li><a className="hover:text-gray-500" href="#">Contact</a></li>
+              <li><a className="hover:text-gray-500" href="/contact">Contact</a></li>
             </ul>
           </div>
           )}
