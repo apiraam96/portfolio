@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import {Button} from '@nextui-org/button'
 
 export default function Introduction() {
     
@@ -31,6 +32,7 @@ export default function Introduction() {
                 <input type="email" />
                 <label>Message</label>
                 <textarea />
+                <Button>Submit</Button>
               </form>
           </div>
         </div>
