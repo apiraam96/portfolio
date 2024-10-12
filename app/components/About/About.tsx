@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ProfilePicture from "../../public/ApiraamProfile.jpg";
+import ProfilePicture from "../../../public/ApiraamProfile.jpg";
 
 export default function About() {
   return (
