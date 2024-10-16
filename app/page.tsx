@@ -1,9 +1,18 @@
+import React from "react";
 import Image from "next/image";
-import Navbar from "./components/OldNavbar";
-import Introduction from "./components/ui/TitleAnimation";
 import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
 import Landing from "./components/Landing";
+import { FloatingNav } from "./components/ui/NavBar";
+import { FaHome } from "react-icons/fa";
+import Grid from "./components/ui/Grid";
+import { useScroll, useTransform } from "framer-motion";
+import { LampContainer, LampDemo } from "./components/ui/lamp";
+import { HeroHighlight } from "./components/ui/HeroHighlight";
+import { Highlight } from "./components/ui/HeroHighlight";
+import Projects from "./components/Projects";
+import { navItems } from "@/data";
+import { motion } from "framer-motion";
+import { HeroHighlightDemo } from "./components/ui/HeroDEMO";
 
 export default function Home() {
   return (
@@ -15,7 +24,10 @@ export default function Home() {
     // </>
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
+        <FloatingNav navItems={navItems} />
         <Landing />
+        <Grid />
+        <Projects />
       </div>
     </main>
   );

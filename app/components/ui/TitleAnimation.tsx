@@ -112,7 +112,7 @@ export default function Introduction() {
     <h2>
       <span className="box"></span>
       <span className="and"></span>
-      <span className="text font-bold"></span>
+      <span className="text font-bold text-[#2af0ea]"></span>
       <span className="cursor">_</span>
     </h2>
     // <section className="h-screen px-4 py-10 md:px-6 md:py-14 lg:py-16">

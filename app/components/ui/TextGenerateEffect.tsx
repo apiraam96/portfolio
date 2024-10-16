@@ -39,7 +39,7 @@ export const TextGenerateEffect = ({
               key={word + idx}
               className={
                 idx == 0
-                  ? "text-purple"
+                  ? "text-[#fe2858]"
                   : "dark:text-white text-black opacity-0"
               }
               style={{
@@ -57,7 +57,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn("font-bold", className)}>
       <div className="mt-4">
-        <div className=" dark:text-white text-black leading-snug tracking-wide">
+        <div className=" dark:text-white text-black leading-snug tracking-wider">
           {renderWords()}
         </div>
       </div>
