@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import About from "./components/About/About";
 import Landing from "./components/Landing";
 import { FloatingNav } from "./components/ui/NavBar";
 import { FaHome } from "react-icons/fa";
@@ -11,8 +10,6 @@ import { HeroHighlight } from "./components/ui/HeroHighlight";
 import { Highlight } from "./components/ui/HeroHighlight";
 import Projects from "./components/Projects";
 import { navItems } from "@/data";
-import { motion } from "framer-motion";
-import { HeroHighlightDemo } from "./components/ui/HeroDEMO";
 import Contact from "./components/Contact";
 
 export default function Home() {
