@@ -16,7 +16,7 @@ const Landing = () => {
           fill="white"
         />
         <Spotlight
-          className="top-10 left-full h-[80vh] w-[50vw]"
+          className="top-10 left-full h-[80vh] w-[50vw] rotate-90"
           fill="white"
         />
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="white" />

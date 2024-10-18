@@ -1,7 +1,7 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Contact", link: "#contact" },
+    { name: "Contact", link: "#contact" }
   ];
   
   export const aboutItems = [
@@ -27,7 +27,7 @@ export const navItems = [
       },
       {
         id: 3,
-        title: "My tech stack",
+        title: "Tech Stack",
         description: "",
         className: "lg:col-span-2 md:col-span-3 md:row-span-2",
         imgClassName: "",
@@ -43,7 +43,7 @@ export const navItems = [
       title: "NotiKube",
       des: "Kubernetes incident management platform accelerated under OSlabs",
       img: "/NotiKube.gif",
-      iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/prometheus.svg"],
+      iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/postgres.svg","/prometheus.svg"],
       link: "https://www.notikube.com",
       live: true
     },
@@ -60,8 +60,8 @@ export const navItems = [
       id: 3,
       title: "Park Nest",
       des: "Airbnb for Parking - a parking lot booking platform for both renters and owners",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/express.svg", "/materialui.svg", "/awsS3.svg", "/passport.svg"],
+      img: "/ParkNest.png",
+      iconLists: ["/re.svg", "/express.svg", "/materialui.svg", "/awsS3.svg", "/passport.svg", "/postgres.svg"],
       link: "https://github.com/Park-Nest/Park-Nest",
       live: false
     },
@@ -69,8 +69,8 @@ export const navItems = [
       id: 4,
       title: "Pod 2.0",
       des: "An E-commerce application with a real payment and credit system via the Stripe API",
-      img: "/p4.svg",
-      iconLists: ["/re.svg", "/redux.svg", "/materialui.svg", "/passport.svg", "/stripe.svg"],
+      img: "/Pod2.png",
+      iconLists: ["/re.svg", "/redux.svg", "express.svg", "/materialui.svg", "/passport.svg", "/postgres.svg","/stripe.svg"],
       link: "https://github.com/Pod-2-0/Pod",
       live: false
     },
@@ -176,14 +176,41 @@ export const navItems = [
   export const socialMedia = [
     {
       id: 1,
-      img: "/git.svg",
+      img: "/link.svg",
+      link: "https://www.linkedin.com/in/apiraam-selvabaskaran/"
     },
     {
       id: 2,
-      img: "/twit.svg",
+      img: "/email.svg",
+      link: "mailto:apiraam96@gmail.com"
     },
     {
       id: 3,
-      img: "/link.svg",
+      img: "/git.svg",
+      link: "https://github.com/apiraam96"
     },
   ];
+
+  export const techListLeft = [
+    {
+      name: 'React', 
+    }, 
+    {
+      name: 'TypeScript', 
+    }, 
+    {
+      name: 'Redux', 
+    }
+  ]
+
+  export const techListRight = [
+    {
+      name: 'NextJS', 
+    }, 
+    {
+      name: 'Express', 
+    }, 
+    {
+      name: 'AWS S3', 
+    }
+  ]

@@ -30,7 +30,10 @@ export function HeroHighlightDemo({
       }}
       className={`text-2xl px-4 md:text-4xl lg:text-5xl font-bold max-w-4xl leading-relaxed lg:leading-snug text-left my-5 font-Roboto`}
     >
-      <Highlight className={`text-black`} color={color}>
+      <Highlight
+        className={`${color === "blue" ? "text-black" : "text-white"}`}
+        color={color}
+      >
         {title}
       </Highlight>
     </motion.h1>
