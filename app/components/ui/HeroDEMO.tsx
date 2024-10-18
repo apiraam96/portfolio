@@ -28,7 +28,7 @@ export function HeroHighlightDemo({
       onAnimationComplete={() => {
         setTimeout(() => setTurnBlack(true), 2000);
       }}
-      className={`text-2xl px-4 md:text-4xl lg:text-5xl font-bold max-w-4xl leading-relaxed lg:leading-snug text-left my-5 font-Roboto`}
+      className={`text-3xl px-4 md:text-4xl lg:text-5xl font-bold max-w-4xl leading-relaxed lg:leading-snug text-left my-5 font-Roboto`}
     >
       <Highlight
         className={`${color === "blue" ? "text-black" : "text-white"}`}

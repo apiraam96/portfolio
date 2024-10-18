@@ -37,7 +37,7 @@ const Contact = () => {
 
       <div className="flex md:flex-row-reverse mt-16 flex-col justify-between items-center">
         <p className="md:text-sm text-[0.6rem] md:font-normal font-light">
-          Built by Apiraam with ❤️
+          Built by Apiraam and made with ❤️
         </p>
         <p className="text-[0.6rem] md:text-sm md:font-normal font-light">
           Copyright © 2024 Apiraam Selvabaskaran
