@@ -38,7 +38,7 @@ const Landing = () => {
           <span className="my-4 text-center md:tracking-wider text-sm md:text-md lg:text-lg">
             <Introduction />
           </span>
-          <a href="www.google.com">
+          <a href="https://www.google.com">
             <LitButton
               title="Check out my CV"
               icon={<FaExternalLinkAlt />}

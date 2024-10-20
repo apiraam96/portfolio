@@ -6,7 +6,7 @@ import { HeroHighlightDemo } from "./ui/HeroDEMO";
 
 const Contact = () => {
   return (
-    <div className="w-full pt-10 md:pt-20 pb-5" id="contact">
+    <div className="w-full pt-5 md:pt-10 pb-5" id="contact">
       <div className="w-full absolute left-0 -bottom-72 in-h-96">
         <img
           src="/footer-grid.svg"
@@ -35,7 +35,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex md:flex-row-reverse mt-16 flex-col justify-between items-center">
+      <div className="font-Roboto flex md:flex-row-reverse mt-16 flex-col justify-between items-center">
         <p className="md:text-sm text-[0.6rem] md:font-normal font-light">
           Built by Apiraam and made with ❤️
         </p>

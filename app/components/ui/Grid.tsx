@@ -2,6 +2,7 @@ import React from "react";
 import { BentoGrid, BentoGridItem } from "./BentoGrid";
 import { aboutItems } from "@/data";
 import { HeroHighlightDemo } from "./HeroDEMO";
+import { BackgroundBeams } from "./BackgroundBeams";
 
 const Grid = () => {
   return (

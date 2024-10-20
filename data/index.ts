@@ -70,7 +70,7 @@ export const navItems = [
       title: "Pod 2.0",
       des: "An E-commerce application with a real payment and credit system via the Stripe API",
       img: "/Pod2.png",
-      iconLists: ["/re.svg", "/redux.svg", "express.svg", "/materialui.svg", "/passport.svg", "/postgres.svg","/stripe.svg"],
+      iconLists: ["/re.svg", "/redux.svg", "express.svg", "/passport.svg", "/postgres.svg","/stripe.svg"],
       link: "https://github.com/Pod-2-0/Pod",
       live: false
     },
