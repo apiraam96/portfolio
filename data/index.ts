@@ -51,7 +51,7 @@ export const navItems = [
       id: 2,
       title: "Emojify",
       des: "Hear what you feel - Use emojis to explore new music genres and songs!",
-      img: "/ParkNest.png",
+      img: "/Emojify.gif",
       iconLists: ["/re.svg", "/ts.svg", "/tail.svg", "/express.svg", "/webpack.svg", "/spotify.svg"],
       link: "https://github.com/BattleshipDragonite/emojify",
       live: false
