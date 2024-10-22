@@ -26,6 +26,10 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        "md": "1024px", 
+        "lg": "1030px"
+      },
       fontFamily: {
         sans: ['Roboto Mono', 'sans'],
         Poppins: ['Poppins', 'sans'],

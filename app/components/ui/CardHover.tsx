@@ -24,7 +24,7 @@ export const HoverEffect = ({
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className={cn("grid grid-cols-1 md:grid-cols-2 py-10", className)}>
+    <div className={cn("grid grid-cols-1 lg:grid-cols-3 py-10", className)}>
       {items.map((item, idx) => (
         <a
           href={item?.link}
@@ -85,7 +85,7 @@ export const HoverEffect = ({
                 </div>
 
                 <div className="font-Roboto flex justify-center items-center">
-                  <p className="flex lg:text-lg text-xs text-[#2af0ea]">
+                  <p className="flex lg:text-md text-xs text-[#2af0ea]">
                     {item.live ? "Check live site" : "Check github"}
                   </p>
                   <FaLocationArrow className="ms-3" color="#2af0ea" />
@@ -109,7 +109,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "flex-col items-center justify-center rounded-xl overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20 p-4",
+        "flex-col items-center justify-center rounded-xl overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}
     >
@@ -147,7 +147,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-4 text-zinc-400 tracking-wide leading-relaxed text-sm lg:text-lg font-Roboto",
+        "mt-4 text-zinc-400 tracking-wide leading-relaxed text-sm lg:text-md font-Roboto",
         className
       )}
     >

@@ -19,7 +19,7 @@ export const navItems = [
         id: 2,
         title: "",
         description: "",
-        className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+        className: "lg:col-span-3 md:col-span-3 md:row-span-4 lg:min-h-[60vh]",
         imgClassName: "w-full h-full",
         titleClassName: "justify-end",
         img: "/ProfilePicture.jpg",
@@ -42,7 +42,7 @@ export const navItems = [
       id: 1,
       title: "NotiKube",
       des: "Kubernetes incident management platform accelerated under OSlabs",
-      img: "/NotiKube.gif",
+      img: "/NotiKube.jpeg",
       iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/postgres.svg","/prometheus.svg"],
       link: "https://www.notikube.com",
       live: true
@@ -51,7 +51,7 @@ export const navItems = [
       id: 2,
       title: "Emojify",
       des: "Hear what you feel - Use emojis to explore new music genres and songs!",
-      img: "/Emojify.gif",
+      img: "/Emojify.png",
       iconLists: ["/re.svg", "/ts.svg", "/tail.svg", "/express.svg", "/webpack.svg", "/spotify.svg"],
       link: "https://github.com/BattleshipDragonite/emojify",
       live: false
