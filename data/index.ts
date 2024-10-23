@@ -57,7 +57,16 @@ export const navItems = [
       live: false
     },
     {
-      id: 3,
+      id: 3, 
+      title: "ePlant", 
+      des: "A gene-centric visualization tool for plant genomes", 
+      img: "/ePlant.png", 
+      iconLists: ["/re.svg", "/ts.svg", "/materialui.svg"], 
+      link: "https://bioanalyticresource.github.io/ePlant/", 
+      live: true
+    },
+    {
+      id: 4,
       title: "Park Nest",
       des: "Airbnb for Parking - a parking lot booking platform for both renters and owners",
       img: "/ParkNest.png",
@@ -68,7 +77,7 @@ export const navItems = [
     {
       id: 4,
       title: "Pod 2.0",
-      des: "An E-commerce application with a real payment and credit system via the Stripe API",
+      des: "An E-commerce application with a real payment system via the Stripe API",
       img: "/Pod2.png",
       iconLists: ["/re.svg", "/redux.svg", "express.svg", "/passport.svg", "/postgres.svg","/stripe.svg"],
       link: "https://github.com/Pod-2-0/Pod",

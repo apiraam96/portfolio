@@ -55,7 +55,7 @@ export const HoverEffect = ({
           <Card>
             <div className="relative flex items-center justify-center  sm:h-[40vh] h-[30vh] overflow-hidden lg:h-[30vh]">
               <div
-                className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+                className="relative w-full h-full overflow-hidden"
                 style={{ backgroundColor: "#13162D" }}
               >
                 <img src="/bg.png" alt="bgimg" />
@@ -109,7 +109,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "flex-col items-center justify-center rounded-xl overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "flex-col items-center justify-center rounded-lg overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}
     >

@@ -47,6 +47,7 @@ const Landing = () => {
           </a>
         </div>
       </div>
+      <BackgroundBeams />
     </div>
   );
 };
