@@ -18,7 +18,7 @@ export const TextGenerateEffect = ({
   let wordsArray = words.split(" ");
   useEffect(() => {
     animate(
-      "span",
+      "p",
       {
         opacity: 1,
         filter: filter ? "blur(0px)" : "none",
@@ -35,7 +35,7 @@ export const TextGenerateEffect = ({
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
           return (
-            <motion.span
+            <motion.p
               key={word + idx}
               className={
                 idx == 0
@@ -47,7 +47,7 @@ export const TextGenerateEffect = ({
               }}
             >
               {word}{" "}
-            </motion.span>
+            </motion.p>
           );
         })}
       </motion.div>

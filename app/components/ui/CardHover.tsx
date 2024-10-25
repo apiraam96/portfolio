@@ -24,14 +24,14 @@ export const HoverEffect = ({
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className={cn("grid grid-cols-1 lg:grid-cols-3 py-10", className)}>
+    <div className={cn("flex flex-wrap justify-center py-10", className)}>
       {items.map((item, idx) => (
         <a
           href={item?.link}
           key={item?.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="relative group p-2 h-full w-full"
+          className="relative group p-2 h-full w-full lg:basis-1/3"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >

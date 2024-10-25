@@ -6,10 +6,11 @@ import LitButton from "./ui/LitButton";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { HeroHighlight } from "./ui/HeroHighlight";
 import { BackgroundBeams } from "./ui/BackgroundBeams";
+import Shapes from "./Shapes";
 
 const Landing = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-36 h-screen flex flex-col justify-center">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -27,18 +28,18 @@ const Landing = () => {
       </div>
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-sm text-center text-blue-100 max-w-80">
+          <h2 className="uppercase tracking-widest text-[2.5vw] text-center md:text-[2vw] lg:text-[0.8vw] text-blue-100 max-w-80">
             Hi, my name is
           </h2>
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-7xl font-Roboto"
+            className="text-center text-[10vw] md:text-[8vw] lg:text-[4.5vw] font-Roboto"
             words="APIRAAM SELVABASKARAN"
             duration={2}
           />
-          <span className="my-4 text-center md:tracking-wider text-sm md:text-md lg:text-lg">
+          <span className="my-4 text-center md:tracking-wider text-[3vw] md:text-[2.5vw] lg:text-[1vw]">
             <Introduction />
           </span>
-          <a href="https://www.google.com">
+          <a href="https://www.google.com" className="mt-20 hover:scale-105">
             <LitButton
               title="Check out my CV"
               icon={<FaExternalLinkAlt />}
