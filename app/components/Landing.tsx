@@ -39,7 +39,12 @@ const Landing = () => {
           <span className="my-4 text-center md:tracking-wider text-[3vw] md:text-[2.5vw] lg:text-[1vw]">
             <Introduction />
           </span>
-          <a href="https://www.google.com" className="mt-20 hover:scale-105">
+          <a
+            href="https://docs.google.com/document/d/1GfKXoxp0f2C9bN7bF_rjM9hwS9khMNcfDFVAq2D8V7Y/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-20 hover:scale-105"
+          >
             <LitButton
               title="Check out my CV"
               icon={<FaExternalLinkAlt />}

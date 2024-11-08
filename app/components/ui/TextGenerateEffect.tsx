@@ -36,6 +36,7 @@ export const TextGenerateEffect = ({
         {wordsArray.map((word, idx) => {
           return (
             <motion.p
+              aria-label={word}
               key={word + idx}
               className={
                 idx == 0

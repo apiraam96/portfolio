@@ -8,7 +8,7 @@ export const navItems = [
       {
         id: 1,
         title: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vestibulum ligula nulla, nec blandit sapien eleifend scelerisque. Aliquam venenatis, enim non feugiat finibus, leo eros pellentesque diam, ut commodo est risus vel turpis. Phasellus eu volutpat ex. Integer non dui sed sem pulvinar laoreet. Nullam ut lorem est. Proin tempor malesuada egestas. Nam lacus magna, facilisis eu felis vitae, ornare molestie est. Nam posuere cursus nulla, non congue magna posuere sed. Curabitur malesuada sem eget posuere scelerisque. Maecenas ultricies magna nisi, a porta arcu porta in. Phasellus at rhoncus magna, in blandit neque. Maecenas vel elit id metus hendrerit pulvinar.",
+        description: "I’m a developer with a strong focus on frontend development, and I have a passion for building seamless, user-centric experiences. Currently, I work at an AI centric biotech company where my roles include software development and biological research, bridging both technology and science to drive innovation. With a diverse skill set and a problem-solving mindset, I thrive in environments where creativity and technical expertise intersect. Check out some of the projects I’ve been involved in below!",
         className: "lg:col-span-2 md:col-span-3 md:row-span-2",
         imgClassName: "",
         titleClassName: "text-2xl justify-start pb-2",
