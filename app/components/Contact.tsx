@@ -37,10 +37,10 @@ const Contact = () => {
 
       <div className="font-Roboto flex md:flex-row-reverse mt-16 flex-col justify-between items-center">
         <p className="md:text-sm text-[0.6rem] md:font-normal font-light">
-          Built by Apiraam and made with ❤️
+          Made with ❤️ by Apiraam
         </p>
         <p className="text-[0.6rem] md:text-sm md:font-normal font-light">
-          Copyright © 2024 Apiraam Selvabaskaran
+          Copyright © 2025 Apiraam Selvabaskaran
         </p>
       </div>
     </div>
